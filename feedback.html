@@ -8,8 +8,6 @@
 	<style type="text/css"></style>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<script src="js/script.js"></script>
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<title>HIKSON-TEAM | Обратная связь</title>
 
 </head>
@@ -29,25 +27,22 @@
 	</center>
 	<div id="wrapper">
 		<div id="articles">
-			<form action="" post="">
-				<!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="Site Name">
-		<input type="hidden" name="admin_email" value="mr.purple2007@gmail.com">
-		<input type="hidden" name="form_subject" value="Заявка с верхней формы">
-				<!-- END Hidden Required Fields -->
+			
+	</div>
+	</div>
+	<form action="" post="">
 				<label for="subject">Тема сообщения:</label>
-					<input type="text" placeholder="Тема сообщения" name="Тема" id="subject">
+					<input type="text" placeholder="Тема сообщения" name="subject" id="subject" class="form-control">
 				<label for="email">Введите вашу почту:</label>
-					<input type="email" placeholder="address@example.com" id="email" name="Почта">
+					<input type="email" placeholder="address@example.com" id="email" name="email" class="form-control">
 				<label for="name">Введите ваше имя:</label>
-					<input type="text" placeholder="Введите ваше имя" id="name" name="Имя">
-					<textarea placeholder="Введите ваше сообщение." id="message" name="Сообщение"></textarea>
-					<button>Отправить</button>
+					<input type="text" placeholder="Введите ваше имя" id="name" name="name" class="form-control">
+					<textarea placeholder="Введите ваше сообщение." id="message" name="message" class="form-control"></textarea>
+					<button type="button" id="sendMail">Отправить</button>
 			</form>
-			<script src="js/script.js"></script>
-			<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	</div>
-	</div>
+			<div id="errorMess"></div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+			<script src="js/formMail.js"></script>
 </div>
 </div>
 	<div class="clear"></div>
